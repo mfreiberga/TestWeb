@@ -11,3 +11,8 @@ body{background-image: url("../images/sniegs.jpg");}
 h1{color:darkslategrey;}
 p{color:navy; font-size:150%}
 td{color:purple; font-size: 170%}
+div{font-style: italic}
+a:link {color: red;}
+a:visited {color: black;}
+a:hover {color: white;}
+a:active {color: blue;}
