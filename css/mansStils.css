@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : 17-Feb-2021, 16:46:02
     Author     : melitafreiberga
 */
-body{background-color:powderblue;}
+body{background-image: url("images/sniegs.jpg");}
 h1{color:green;}
-p{color:yellow; font-size:150%}
+p{color:orange; font-size:150%}
 td{color:purple;}
