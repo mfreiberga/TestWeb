@@ -7,7 +7,12 @@
     
 </head>
 <body>
-     
+     <script> 
+        function k(n){
+        var msec = Date.parse(new Date());
+        var d = new Date(msec+Number(n)*86400000);
+        document.getElementById("demo").value = d;}
+    </script>
     <h1>Formas un ievadlauku piemērs</h1>
     <form>
         <p>Šodienas datums <input name="datums"></p>
@@ -20,12 +25,7 @@
         <p>Dienu skaits<input name="dienas"></p>
         <p>Nākotnes datums<input id="demo" name="nakotne"></p>
         
-    <script> 
-        function k(n){
-        var msec = Date.parse(new Date());
-        var d = new Date(msec+Number(n)*86400000);
-        document.getElementById("demo").valueHTML = d;}
-    </script>
+    
         <p>Ja gribi uzzināt, kurš datums būs pēc _ dienām, spied pogu NĀKOTNE 
             <input onclick="k(dienas.value);" name="poga1" value="NĀKOTNE" type="button">
         </p>
