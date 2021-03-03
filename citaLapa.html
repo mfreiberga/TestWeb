@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formas</title>
+    <script>
+    function krasot(){
+        var kr=document.getElementById("krasa").value;
+        document.getElementById("fons").style="background-color:"+kr;
+    }
+    </script>
+</head>
+<body>
+<form>
+  <div id="fons" style="background-color:lightgrey">Izvēlies krāsu!</div>
+  <input type="color" id="krasa" value="#00ff00" onclick="krasot();">
+</form>
+    <a href="index.html">
+            <img src="images/bulta1.png" alt="bulta" style="width:120px;height:100px;"/>
+        </a>
+</body>
+</html>
