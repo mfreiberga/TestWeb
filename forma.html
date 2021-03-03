@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Formas</title>
     <link href="css/mansStils.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
+     
     <h1>Formas un ievadlauku piemērs</h1>
     <form>
         <p>Šodienas datums <input name="datums"></p>
@@ -14,6 +16,18 @@
         </p>
         <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
             <input value="RESET" type="reset">
+        </p>
+        <p>Dienu skaits<input name="dienas"></p>
+        <p>Nākotnes datums<input name="nakotne"></p>
+        
+    <script> 
+        function k(){id="demo";
+        var msec = Date.parse(new Date());
+        var d = new Date(msec+Number(dienas.value)*86400000);
+        document.getElementById("demo").innerHTML = d;}
+    </script>
+        <p>Ja gribi uzzināt, kurš datums būs pēc _ dienām, spied pogu NĀKOTNE 
+            <input onclick="nakotne.value=k();" name="poga1" value="NĀKOTNE" type="button">
         </p>
     </form>
     <form>
